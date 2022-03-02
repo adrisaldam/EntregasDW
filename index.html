@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<head>
-    <meta charset = “UTF-8”>
-    <meta name =”description” content=”Página 1 para mi perfil”/>
-    <meta name=”robots” content=”index,follow/”>
-    <title>Página 1 para mi perfil</title>
-    <meta name=”viewport” content=”width=device-width, initial-sacale=1.0”/>
-    <link rel=”stylesheet” href=””>
-</head>
+<html>
+    <head>
+        <meta charset = “UTF-8”>
+        <meta name =”description” content=”Página 1 para mi perfil”/>
+        <meta name=”robots” content=”index,follow/”>
+        <title>Página 1 para mi perfil</title>
+        <meta name=”viewport” content=”width=device-width, initial-sacale=1.0”/>
+        <link rel="stylesheet" href="/cs/estilos.css">
+    </head>
 
-<body>
+    <body>
+        <header>
+            <div class="menu">
+                <p>Breve descripción</p>
+                <p>Habilidades</p>
+                <p>Contacto</p>
+            </div>
+        </header>
 
-    <div class="menu">
-        <p>Breve descripción</p>
-        <p>Habilidades</p>
-        <p>Contacto</p>
-    </div>
-    <header>
-        <h1>Datos</h1>
-        <h1>Experiencia</h1>
-        <h1>Contacto</h1>
-    </header>
+        <main>
+            <img src="recuros/IMG_3217.JPG" width="400" alt="Alt Text"/>
+            <h3>Breve descripción</h3>
+            <p>Soy un estudiante de 20 años, actualmente cursando la carrera de Ingeniería en diseño de 
+                entretenimiento digital. He estudiando en la UPB, tanto colegio como universidad, desde 
+                el primer grado. Soy un joven sociable con mucho compromiso en los proyectos en los que 
+                participo. Me gusta llevar los tiempos de los trabajos en los que estoy, manejar las 
+                entregas según lo requerido por el proyecto. Mi nivel de inglés actualemte es B2.
+            </p>
+            <h3>Habilidades</h3>
+            <p>Considero que mi mayor fuerte como desarrollador de videojuegos son mis conocimientos
+                en programación en el lenguaje c# para Unity, en el que me desenvuelvo fácilmente 
+                según las necesidades, también basándome en documentación del tema y en tutoriales
+                variados que se hayan en internet. Mi segundo fuerte es la parte creativa en la creación
+                de los juegos, historias, personajes, escensarios y demás, siempre llevando un proceso 
+                creativo basado en la teoría aprendida y, con los conocimientos adquiridos, dándome la 
+                oportunidad de cambiar las "reglas" de la teoría según la necesidad del proyecto.
+            </p>
+            <img src="recuros/umillao.png" width="400" alt= "Texto cabron"/>
 
-    <main>
-        <img src="recuros/IMG_3217.JPG" width="400" alt="Alt Text"/>
-        <h3>Breve descripción</h3>
-        <p>Aqui va el parrafo de la descripción</p>
-        <h3>Habilidades</h3>
-        <p>Aqui va el parrafo de las habilidades</p>
-        <img src="recuros/umillao.png" width="400" alt= "Texto cabron"/>
-
-        <section>
-            <h1>Formulario1</h1>
-            <form action="" autocomplete="on">
-                <label for ="nombre">
-                    <span>Indique su nombre</span>
-                    <input type ="text" id="nombre" placeholder="Nombre" name="nombre" required>
-                </label>
-                <label for="telefono">
-                    <span>Indique su número de teléfono</span>
-                    <input type="text" id="nacimiento" name="nacimiento">
-                </label>
-            </form>
-        </section>
-        <section>
-            <h1>Formulario2</h1>
+            <section>
+                <h1>Formulario 1</h1>
+                <form action="" autocomplete="on">
+                    <label for ="nombre">
+                        <span>Indique su nombre</span>
+                        <input type ="text" id="nombre" placeholder="Nombre" name="nombre" required>
+                    </label>
+                    <label for="telefono">
+                        <span>Indique su número de teléfono</span>
+                        <input type="text" id="nacimiento" name="nacimiento">
+                    </label>
+                </form>
+            </section>
+            <section>
+                <h1>Formulario 2</h1>
+                <form action="">
+                    <span>Seleccione el proyecto que quiere ver</span>
+                    <input list="proyectos">
+                    <select id="proyectos">
+                        <option value="Taller 2"></option>
+                        <option value="Taller 3"></option>
+                        <option value="Taller 4"></option>
+                        <option value="Taller 5"></option>
+                    </select> 
+                    <span>Ingrese su correo electrónico para contactarlo</span>
+                    <input type="text" id="correo" name="correo" minlength="5" size="20">
+                </form>
+            </section>
             <form action="">
-                <span>Seleccione el proyecto que quiere ver</span>
-                <input list="proyectos">
-                <select id="proyectos">
-                    <option value="Taller 2"></option>
-                    <option value="Taller 3"></option>
-                    <option value="Taller 4"></option>
-                    <option value="Taller 5"></option>
-                </select> 
-                <span>Ingrese su correo electrónico para contactarlo</span>
-                <input type="text" id="correo" name="correo" minlength="5" size="20">
+                <input type="submit" value="Submit">
             </form>
-        </section>
-    </main>
-</body>
+        </main>
+    </body>
+</html>
